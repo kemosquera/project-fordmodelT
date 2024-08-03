@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Model T Promotional Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="images/ford-logo.png" alt="Ford Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="support.html">Support</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Welcome to the Ford Model T Promotional Site</h1>
+            <p>Discover the legendary Ford Model T, the car that revolutionized the automotive industry with its affordability, reliability, and innovative manufacturing techniques.</p>
+            
+            <!-- Carousel -->
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/model-t1.jpg" alt="Ford Model T Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/model-t2.jpg" alt="Ford Model T Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/model-t3.jpg" alt="Ford Model T Image 3">
+                    </div>
+                    <!-- Add more carousel items if needed -->
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ford Motor Company</p>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carousel-item');
+            if (index >= slides.length) currentSlide = 0;
+            if (index < 0) currentSlide = slides.length - 1;
+            slides.forEach((slide, i) => {
+                slide.style.display = i === currentSlide ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide += 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide -= 1);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>

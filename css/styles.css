@@ -1,0 +1,278 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, footer {
+    background-color: #003399; /* Ford Blue */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; /* Center content within the container */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #003399; /* Ford Blue */
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px; /* Center paragraph and add bottom margin */
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background-color: #003399; /* Ford Blue */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #002266; /* Darker Ford Blue */
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none;
+}
+
+.carousel-images img.visible {
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+footer {
+    background-color: #003399; /* Ford Blue */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 40px; /* Add margin to push footer below content */
+}
+
+footer p {
+    color: #fff; /* Ensuring text is visible */
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; /* Center content within the container */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #003399; /* Ford Blue */
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px; /* Center paragraph and add bottom margin */
+}
+
+/* New styles for the About Us image */
+.about-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+/* Existing styles */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; /* Center content within the container */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #003399; /* Ford Blue */
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    color: #003399; /* Ford Blue */
+    margin: 10px 0;
+}
+
+.product .price {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product .original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.rating {
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+.fa-star, .fa-star-half {
+    margin-right: 5px;
+}
+
+.checked {
+    color: #ffcc00;
+}
+
+/* Existing styles */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; /* Center content within the container */
+}
+
+h2, h3 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #003399; /* Ford Blue */
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px; /* Center paragraph and add bottom margin */
+}
+
+/* New styles for the support form */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #003399; /* Ford Blue */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #001f66;
+}
+
